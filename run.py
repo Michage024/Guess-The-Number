@@ -1,19 +1,35 @@
-import gspread
-from google.oauth2.service_account import Credentials
+# src/main.py
 
-SCOPE = [
-    "https://www.googleapis.com/auth/spreadsheets",
-    "https://www.googleapis.com/auth/drive.file",
-    "https://www.googleapis.com/auth/drive"
-    ]
-   
-CREDS = Credentials.from_service_account_file('creds.json')
-SCOPED_CREDS = CREDS.with_scopes(SCOPE)
-GSPREAD_CLIENT = gspread.authorize(SCOPED_CREDS)
-SHEET = GSPREAD_CLIENT.open('mack_electronics')
+import random
 
-sales = SHEET.worksheet('sales')
+def guess_the_number():
+    while True:
+        number_to_guess = random.randint(1, 100)
+        attempts = 0
+        guessed = False
 
-data = sales.get_all_values()
+        print("\nWelcome to 'Guess the Number' game!")
+        print("I have selected a number between 1 and 100.")
+        
+        while not guessed:
+            try:
+                guess = int(input("Take a guess: "))
+                attempts += 1
 
-print(data)
+                if guess < number_to_guess:
+                    print("Too low!")
+                elif guess > number_to_guess:
+                    print("Too high!")
+                else:
+                    guessed = True
+                    print(f"Congratulations! You've guessed the number in {attempts} attempts.")
+            except ValueError:
+                print("Please enter a valid integer.")
+        
+        play_again = input("Do you want to play again? (yes/no): ").strip().lower()
+        if play_again != 'yes':
+            print("Thank you for playing!")
+            break
+
+if __name__ == "__main__":
+    guess_the_number()
