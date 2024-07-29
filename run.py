@@ -2,6 +2,7 @@
 
 import random
 
+
 def play_game():
     number_to_guess = random.randint(1, 7)
     attempts = 0
@@ -21,9 +22,10 @@ def play_game():
             attempts += 1
 
             if guess < 1 or guess > 7:
-                print("Invalid, please enter a valid number")
+                print("Invalid, please enter a valid number between 1 and 7")
             elif guess in previous_guesses:
                 print("Invalid, please enter a different number")
+                print("between 1 and 7")
             else:
                 previous_guesses.add(guess)
 
@@ -33,7 +35,8 @@ def play_game():
                     print("Too high!")
                 else:
                     guessed = True
-                    print(f"Well done! You guessed the correct number in {attempts} attempts.")
+                    print(f"Well done! You guessed the correct number in")
+                    print(f"{attempts} attempts.")
         except ValueError:
             print("Please enter a valid integer.")
             attempts += 1
@@ -42,13 +45,16 @@ def play_game():
         print(f"Sorry, you have used all {max_attempts} attempts.")
         print(f"The correct number is {number_to_guess}.")
 
+
 def main():
     while True:
         play_game()
-        play_again = input("Would you like to play again? (yes/no): ").strip().lower()
+        play_again = input("Play again?(yes/no):").strip().lower()
+
         if play_again != 'yes':
             print("Thanks for playing the Guess the Number Game!")
             break
+
 
 if __name__ == "__main__":
     main()
