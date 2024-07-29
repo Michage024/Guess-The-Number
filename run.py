@@ -17,7 +17,7 @@ def play_game():
 
     while not guessed and attempts < max_attempts:
         try:
-            guess = int(input("Type in your number: "))
+            guess = int(input("Enter a number: "))
 
             attempts += 1
 
