@@ -28,7 +28,7 @@ def guess_the_number():
                 print("Please enter a valid integer.")
         
         if not guessed:
-            print(f"Sorry, you've used all {max_attempts} attempts. The number was {number_to_guess}.")
+            print(f"Sorry, you've used up your {max_attempts} attempts. The number was {number_to_guess}.")
 
         play_again = input("Do you want to play again? (yes/no): ").strip().lower()
         if play_again != 'yes':
