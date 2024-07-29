@@ -8,7 +8,7 @@ def play_game():
     max_attempts = 5
     guessed = False
 
-    print("\nWelcome to 'Mack Electro Number' game!")
+    print("\nWelcome to 'Mack Electro Numbers' game!")
     print(f"I have selected a number between 1 and 10. You have {max_attempts} attempts to guess it.")
     
     while not guessed and attempts < max_attempts:
