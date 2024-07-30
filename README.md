@@ -1,16 +1,10 @@
-## Guess The Number
+# Guess The Number
 
 ### User Experience
 "Guess the Number" is a simple text-based game where the player has to guess a randomly generated number between 1 and 7. The game provides feedback whether the guess is too high, too low, or correct. The player has a maximum of 5 attempts to guess the number correctly. After the game ends, the player is given the option to play again.
 
-Key Information for the Site
-
-New user to set up a new account
-
-Exisiting user to access their account
-
-User Functions Steps;
-Cick on link: https://mack-numbers-4a640df74046.herokuapp.com/
+### User Functions Steps:
+User need to us the following link: https://mack-numbers-4a640df74046.herokuapp.com/
 
 Follow the instructions and complete and ehter a number between 1 and 7. User has 5 attempts. 
 
@@ -36,11 +30,18 @@ The image below shows an example:
 
 ![Attempts exhausted](https://github.com/user-attachments/assets/18ff8063-cdd6-47f1-ade5-05974cbed1af)
 
-If User enters a wrong number more than once consecutively, it prints 'Sorry, you have used all 5 attemts!' then states the correct number and promts User to enter either yes or no to indicate if they will like to play again.
+If User enters a wrong number more than once consecutively, it prints 'Sorry, you have used all 5 attemts!' and promts User to enter a different number.
 
 The image below shows an example:
 
 ![wrong number more than once](https://github.com/user-attachments/assets/178d6b66-0baf-4b2f-9b63-284361394f93)
+
+If User enters a number outside of range of numbers from 1 to 7, it prints 'Invalid, please enter a number between 1 and 7!' and promts User to enter a different number.
+
+The image below shows an example:
+
+![Outside of range of numbers from 1 to 7](https://github.com/user-attachments/assets/b9d468fa-fad8-4ab6-8ef0-c6716fa0105d)
+
 
 
 To be able to set up a new account
