@@ -19,37 +19,37 @@ python run.py
 
 ### User Functions Steps:
 
-If User enters a number that is below the correct 'number_to_guess', it prints 'Too low!' and promts User to enter a different number.
+If User enters a number that is below the correct 'number_to_guess', it prints 'Too low!' and prompts User to enter a different number.
 
 The image below shows an example:
 
 ![welcome](https://github.com/user-attachments/assets/f0003940-09ca-4a14-b20a-b444444fd821)
 
-If User enters a number that is higher than the correct 'number_to_guess', it prints 'Too high!' and promts User to enter a different number.
+If User enters a number that is higher than the correct 'number_to_guess', it prints 'Too high!' and prompts User to enter a different number.
 
 The image below shows an example:
 
 ![too high](https://github.com/user-attachments/assets/2357c186-bc1a-48e8-a6b7-69b7b1706257)
 
-If User is enters the correct number, 'Well done! You guessed the correct number in (the amount of attempts) attempts' and promts User to enter either yes or no to indicate if they will like to play again.
+If User is enters the correct number, 'Well done! You guessed the correct number in (the amount of attempts) attempts' and prompts User to enter either yes or no to indicate if they will like to play again.
 
 The image below shows an example:
 
 ![correct](https://github.com/user-attachments/assets/ee4124f1-eb0f-4651-a77d-1923a4e51358)
 
-If User is unsuccessful after 5 attempts, it prints 'Sorry, you have used all 5 attempts!', then states the correct number and promts User to enter either yes or no to indicate if they will like to play again.
+If User is unsuccessful after 5 attempts, it prints 'Sorry, you have used all 5 attempts!', then states the correct number and prompts User to enter either yes or no to indicate if they will like to play again.
 
 The image below shows an example:
 
 ![Attempts exhausted](https://github.com/user-attachments/assets/18ff8063-cdd6-47f1-ade5-05974cbed1af)
 
-If User enters a wrong number more than once consecutively, it prints 'Sorry, you have used all 5 attemts!' and promts User to enter a different number.
+If User enters a wrong number more than once consecutively, it prints 'Sorry, you have used all 5 attempts!' and prompts User to enter a different number.
 
 The image below shows an example:
 
 ![wrong number more than once](https://github.com/user-attachments/assets/178d6b66-0baf-4b2f-9b63-284361394f93)
 
-If User enters a number outside of range of numbers from 1 to 7, it prints 'Invalid, please enter a number between 1 and 7!' and promts User to enter a different number.
+If User enters a number outside of range of numbers from 1 to 7, it prints 'Invalid, please enter a number between 1 and 7!' and prompts User to enter a different number.
 
 The image below shows an example:
 
