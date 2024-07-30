@@ -79,11 +79,15 @@ Offers the player the option to play again after each game.
 
 Github
 
-Gitpod
+Gitpod:
+
+![gitpod](https://github.com/user-attachments/assets/7804e5d7-86f8-4285-a3b4-a4054711bbe9)
 
 Python 3.x
 
 Heroku
+
+![heroku](https://github.com/user-attachments/assets/42ecd587-b015-4949-a8da-0489eeb26d38)
 
 CI Python Linter
 
@@ -92,3 +96,6 @@ CI Python Linter
 Code verified with CI Python Linter
 
 Verificator link: https://pep8ci.herokuapp.com/#
+
+![VALIDATION](https://github.com/user-attachments/assets/3bd9f09a-2aff-493e-ac06-4a6b912edf56)
+
