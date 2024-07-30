@@ -1,32 +1,40 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+## Guess The Number
 
-Welcome,
+### User Experience
+"Guess the Number" is a simple text-based game where the player has to guess a randomly generated number between 1 and 7. The game provides feedback whether the guess is too high, too low, or correct. The player has a maximum of 5 attempts to guess the number correctly. After the game ends, the player is given the option to play again.
 
-This is the Code Institute student template for deploying your third portfolio project, the Python command-line project. The last update to this file was: **May 14, 2024**
+Key Information for the Site
 
-## Reminders
+New user to set up a new account
 
-- Your code must be placed in the `run.py` file
-- Your dependencies must be placed in the `requirements.txt` file
-- Do not edit any of the other files or your code may not deploy properly
+Exisiting user to access their account
 
-## Creating the Heroku app
+User Functions Steps;
+Cick on link: https://mack-numbers-4a640df74046.herokuapp.com/
+Follow the instructions and complete and ehter a number between 1 and 7. User has 5 attempts.
 
-When you create the app, you will need to add two buildpacks from the _Settings_ tab. The ordering is as follows:
+![welcome](https://github.com/user-attachments/assets/f0003940-09ca-4a14-b20a-b444444fd821)
 
-1. `heroku/python`
-2. `heroku/nodejs`
+If User enters a number that is below the correct 'number_to_guess', it prints 'Too low!' and promts User to enter a different number.
 
-You must then create a _Config Var_ called `PORT`. Set this to `8000`
+![1](https://github.com/user-attachments/assets/82102433-ec87-4e00-aee9-7bd65827f211)
 
-If you have credentials, such as in the Love Sandwiches project, you must create another _Config Var_ called `CREDS` and paste the JSON into the value field.
+If User enters a number that is higher than the correct 'number_to_guess', it prints 'Too high!' and promts User to enter a different number.
 
-Connect your GitHub repository and deploy as normal.
+![2](https://github.com/user-attachments/assets/dd0efd6a-8f42-4a57-bf86-74a35b8bb98e)
 
-## Constraints
 
-The deployment terminal is set to 80 columns by 24 rows. That means that each line of text needs to be 80 characters or less otherwise it will be wrapped onto a second line.
 
----
 
-Happy coding!
+
+To be able to set up a new account
+To understand how to use the program
+To be able to choose their own username
+Returning Visitor Goals
+For personal data to be stored securely
+To access an exisiting account
+To be able to add transactions, by category and with a description
+To be able to view the sum and mean values of their transactions, by category, for a selected date range
+An option to view their transactions for a selected date range
+A pleasant user experience
+Back to top
