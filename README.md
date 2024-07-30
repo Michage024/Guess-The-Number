@@ -42,16 +42,7 @@ The image below shows an example:
 
 ![Outside of range of numbers from 1 to 7](https://github.com/user-attachments/assets/b9d468fa-fad8-4ab6-8ef0-c6716fa0105d)
 
+### Verification
 
-
-To be able to set up a new account
-To understand how to use the program
-To be able to choose their own username
-Returning Visitor Goals
-For personal data to be stored securely
-To access an exisiting account
-To be able to add transactions, by category and with a description
-To be able to view the sum and mean values of their transactions, by category, for a selected date range
-An option to view their transactions for a selected date range
-A pleasant user experience
-Back to top
+Code verified with CI Python Linter
+Verificator link: https://pep8ci.herokuapp.com/#
