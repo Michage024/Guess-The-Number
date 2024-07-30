@@ -1,7 +1,7 @@
-# Guess The Number
+# Guess The Number Game
 
 ### User Experience
-"Guess the Number" is a simple text-based game where the player has to guess a randomly generated number between 1 and 7. The game provides feedback whether the guess is too high, too low, invalid due to an out of range number entered, invalid due to a repeated wrong number entered or correct. The player has a maximum of 5 attempts to guess the number correctly. After the game ends, the player is given the option to play again.
+"Guess The Number Game" is a simple text-based game where the player has to guess a randomly generated number between 1 and 7. The game provides feedback whether the guess is too high, too low, invalid due to an out of range number entered, invalid due to a repeated wrong number entered or correct. The player has a maximum of 5 attempts to guess the number correctly. After the game ends, the player is given the option to play again.
 
 ### How to Run
 
