@@ -11,20 +11,36 @@ Exisiting user to access their account
 
 User Functions Steps;
 Cick on link: https://mack-numbers-4a640df74046.herokuapp.com/
-Follow the instructions and complete and ehter a number between 1 and 7. User has 5 attempts.
+
+Follow the instructions and complete and ehter a number between 1 and 7. User has 5 attempts. 
+
+The image below shows an example:
 
 ![welcome](https://github.com/user-attachments/assets/f0003940-09ca-4a14-b20a-b444444fd821)
 
 If User enters a number that is below the correct 'number_to_guess', it prints 'Too low!' and promts User to enter a different number.
 
+The image below shows an example:
+
 ![1](https://github.com/user-attachments/assets/82102433-ec87-4e00-aee9-7bd65827f211)
 
 If User enters a number that is higher than the correct 'number_to_guess', it prints 'Too high!' and promts User to enter a different number.
 
+The image below shows an example:
+
 ![2](https://github.com/user-attachments/assets/dd0efd6a-8f42-4a57-bf86-74a35b8bb98e)
 
+If User is unsuccessful after 5 attempts, it prints 'Sorry, you have used all 5 attempts!', then states the correct number and promts User to enter either yes or no to indicate if they will like to play again.
 
+The image below shows an example:
 
+![Attempts exhausted](https://github.com/user-attachments/assets/18ff8063-cdd6-47f1-ade5-05974cbed1af)
+
+If User enters a wrong number more than once consecutively, it prints 'Sorry, you have used all 5 attemts!' then states the correct number and promts User to enter either yes or no to indicate if they will like to play again.
+
+The image below shows an example:
+
+![wrong number more than once](https://github.com/user-attachments/assets/178d6b66-0baf-4b2f-9b63-284361394f93)
 
 
 To be able to set up a new account
