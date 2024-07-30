@@ -1,10 +1,23 @@
 # Guess The Number
 
 ### User Experience
-"Guess the Number" is a simple text-based game where the player has to guess a randomly generated number between 1 and 7. The game provides feedback whether the guess is too high, too low, or correct. The player has a maximum of 5 attempts to guess the number correctly. After the game ends, the player is given the option to play again.
+"Guess the Number" is a simple text-based game where the player has to guess a randomly generated number between 1 and 7. The game provides feedback whether the guess is too high, too low, invalid due to an out of range number entered, invalid due to a repeated wrong number entered or correct. The player has a maximum of 5 attempts to guess the number correctly. After the game ends, the player is given the option to play again.
+
+### How to Run
+
+User needs to ensure that they have Python 3.x installed on their device.
+
+Save the provided code in a file named run.py.
+
+Open a terminal or command prompt.
+
+Navigate to the directory where run.py is located.
+
+Run the game using the following command:
+
+python run.py
 
 ### User Functions Steps:
-User need to us the following link: https://mack-numbers-4a640df74046.herokuapp.com/
 
 If User enters a number that is below the correct 'number_to_guess', it prints 'Too low!' and promts User to enter a different number.
 
@@ -42,8 +55,6 @@ The image below shows an example:
 
 ![Outside of range of numbers from 1 to 7](https://github.com/user-attachments/assets/b9d468fa-fad8-4ab6-8ef0-c6716fa0105d)
 
-
-
 ## Features
 
 Randomly selects a number between 1 and 7.
@@ -62,25 +73,19 @@ Prevents the player from guessing the same number more than once.
 
 Offers the player the option to play again after each game.
 
-
-### How to Run
-
-Ensure you have Python 3.x installed on your machine.
-
-Save the provided code in a file named main.py.
-
-Open a terminal or command prompt.
-
-Navigate to the directory where main.py is located.
-
-Run the game using the following command:
-
 ## Technology
 
 ### Requirements
+
+Github
+
+Gitpod
+
 Python 3.x
 
+Heroku
 
+CI Python Linter
 
 ### Verification
 
