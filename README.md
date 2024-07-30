@@ -42,7 +42,48 @@ The image below shows an example:
 
 ![Outside of range of numbers from 1 to 7](https://github.com/user-attachments/assets/b9d468fa-fad8-4ab6-8ef0-c6716fa0105d)
 
+
+
+## Features
+
+Randomly selects a number between 1 and 7.
+
+Prompts the player to guess the number.
+
+Informs the player if their guess is too high, too low, or correct.
+
+Keeps track of the number of attempts.
+
+Limits the player to 5 attempts.
+
+Counts invalid entries (numbers outside the range) as attempts.
+
+Prevents the player from guessing the same number more than once.
+
+Offers the player the option to play again after each game.
+
+
+### How to Run
+
+Ensure you have Python 3.x installed on your machine.
+
+Save the provided code in a file named main.py.
+
+Open a terminal or command prompt.
+
+Navigate to the directory where main.py is located.
+
+Run the game using the following command:
+
+## Technology
+
+### Requirements
+Python 3.x
+
+
+
 ### Verification
 
 Code verified with CI Python Linter
+
 Verificator link: https://pep8ci.herokuapp.com/#
