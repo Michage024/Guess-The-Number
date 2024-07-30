@@ -6,23 +6,23 @@
 ### User Functions Steps:
 User need to us the following link: https://mack-numbers-4a640df74046.herokuapp.com/
 
-Follow the instructions and complete and ehter a number between 1 and 7. User has 5 attempts. 
+If User enters a number that is below the correct 'number_to_guess', it prints 'Too low!' and promts User to enter a different number.
 
 The image below shows an example:
 
 ![welcome](https://github.com/user-attachments/assets/f0003940-09ca-4a14-b20a-b444444fd821)
 
-If User enters a number that is below the correct 'number_to_guess', it prints 'Too low!' and promts User to enter a different number.
-
-The image below shows an example:
-
-![1](https://github.com/user-attachments/assets/82102433-ec87-4e00-aee9-7bd65827f211)
-
 If User enters a number that is higher than the correct 'number_to_guess', it prints 'Too high!' and promts User to enter a different number.
 
 The image below shows an example:
 
-![2](https://github.com/user-attachments/assets/dd0efd6a-8f42-4a57-bf86-74a35b8bb98e)
+![too high](https://github.com/user-attachments/assets/2357c186-bc1a-48e8-a6b7-69b7b1706257)
+
+If User is enters the correct number, 'Well done! You guessed the correct number in (the amount of attempts) attempts' and promts User to enter either yes or no to indicate if they will like to play again.
+
+The image below shows an example:
+
+![correct](https://github.com/user-attachments/assets/ee4124f1-eb0f-4651-a77d-1923a4e51358)
 
 If User is unsuccessful after 5 attempts, it prints 'Sorry, you have used all 5 attempts!', then states the correct number and promts User to enter either yes or no to indicate if they will like to play again.
 
