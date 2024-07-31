@@ -19,7 +19,6 @@ def play_game():
         try:
             guess = int(input("Enter a number: "))
 
-            attempts += 1
 
             if guess < 1 or guess > 7:
                 print("Invalid, please enter a valid number between 1 and 7")
@@ -27,6 +26,7 @@ def play_game():
                 print("Invalid, please enter a different number")
                 print("between 1 and 7")
             else:
+                attempts += 1
                 previous_guesses.add(guess)
 
                 if guess < number_to_guess:
@@ -39,7 +39,7 @@ def play_game():
                     print(f"{attempts} attempts.")
         except ValueError:
             print("Please enter a valid integer.")
-            attempts += 1
+            
 
     if not guessed:
         print(f"Sorry, you have used all {max_attempts} attempts.")
@@ -58,4 +58,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-run
