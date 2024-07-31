@@ -95,6 +95,10 @@ Heroku
 
 CI Python Linter
 
+### Flow Chart
+
+![flow chart](https://github.com/user-attachments/assets/ace95869-920d-4fd4-896d-485a39baec89)
+
 ### Verification
 
 Code verified with CI Python Linter
