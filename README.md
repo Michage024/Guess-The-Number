@@ -55,6 +55,10 @@ The image below shows an example:
 
 ![Outside of range of numbers from 1 to 7](https://github.com/user-attachments/assets/b9d468fa-fad8-4ab6-8ef0-c6716fa0105d)
 
+If User enters any other key or symbol, it prints 'Invalid, please enter a number between 1 and 7!', and prompts User to enter a different number. It also lets them know that they have exhausted all attempts for that session after 5 tries.
+
+![Attempts exhausted](https://github.com/user-attachments/assets/6b9dd258-0782-4b18-acb7-3c48cef72aa7)
+
 ## Features
 
 Randomly selects a number between 1 and 7.
@@ -99,3 +103,24 @@ Verificator link: https://pep8ci.herokuapp.com/#
 
 ![VALIDATION](https://github.com/user-attachments/assets/3bd9f09a-2aff-493e-ac06-4a6b912edf56)
 
+### Code Explanation
+
+play_game Function: Contains the main logic of the game.
+
+Generates a random number between 1 and 7.
+
+Prompts the player to enter their guess.
+
+Checks if the guess is within the valid range and if it has been guessed before.
+
+Provides feedback on whether the guess is too high, too low, or correct.
+
+Keeps track of the number of attempts.
+
+Ends the game if the player uses all attempts or guesses the correct number.
+
+main Function: Controls the game loop.
+
+Continuously runs the game until the player decides to stop.
+
+Asks the player if they want to play again after each game.
