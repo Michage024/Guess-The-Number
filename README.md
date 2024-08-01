@@ -102,6 +102,10 @@ CI Python Linter
 
 ### Verification
 
+Ligthouse
+
+![light house](https://github.com/user-attachments/assets/d5ec2ecd-be38-49ac-9430-52c77c40496a)
+
 Code verified with CI Python Linter
 
 Verificator link: https://pep8ci.herokuapp.com/#
