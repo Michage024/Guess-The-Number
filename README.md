@@ -53,7 +53,7 @@ If User enters a number outside of range of numbers from 1 to 7, it prints 'Inva
 
 The image below shows an example:
 
-![Outside of range of numbers from 1 to 7](https://github.com/user-attachments/assets/b9d468fa-fad8-4ab6-8ef0-c6716fa0105d)
+![Outside of range of numbers from 1 to 7](https://github.com/user-attachments/assets/cc19916f-def2-44dd-82c8-972f2ea81438)
 
 If User enters any other key or symbol, it prints 'Invalid, please enter a number between 1 and 7!', and prompts User to enter a different number. It also lets them know that they have exhausted all attempts for that session after 5 tries.
 
@@ -91,13 +91,14 @@ Python 3.x
 
 Heroku
 
-![heroku](https://github.com/user-attachments/assets/42ecd587-b015-4949-a8da-0489eeb26d38)
+![heroku](https://github.com/user-attachments/assets/ab6b1a32-da5a-4877-8e30-f26a02f92496)
 
 CI Python Linter
 
 ### Flow Chart
 
-![flow chart](https://github.com/user-attachments/assets/ace95869-920d-4fd4-896d-485a39baec89)
+![Guess the game flow chart](https://github.com/user-attachments/assets/074f261d-c838-4089-a6f1-d4f13cd573ba)
+
 
 ### Verification
 
