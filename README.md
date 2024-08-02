@@ -248,7 +248,7 @@ Set up a web dyno to run the main.py file.
 
 ### 8. Credits
 
-Developed by [Michael Agesse].
+Developed by Michael Agesse.
 
 Inspired by classic number guessing games.
 
