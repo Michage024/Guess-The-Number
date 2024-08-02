@@ -27,7 +27,7 @@ Prevents the player from guessing the same number more than once.
 
 Offers the player the option to play again after each game.
 
-Flow Chart
+### Flow Chart
 
 ![Guess the game flow chart](https://github.com/user-attachments/assets/074f261d-c838-4089-a6f1-d4f13cd573ba)
 
