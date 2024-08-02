@@ -31,11 +31,11 @@ Offers the player the option to play again after each game.
 
 ![Guess the game flow chart](https://github.com/user-attachments/assets/074f261d-c838-4089-a6f1-d4f13cd573ba)
 
-Start
+#### Start
 
 Begin the program.
 
-Main Loop
+#### Main Loop
 
 Prompt: "Would you like to play again? (yes/no): "
 
@@ -43,11 +43,11 @@ Input: play_again
 
 Decision: play_again == 'yes'?
 
-If Yes, proceed to Play Game.
+  - If Yes, proceed to Play Game.
 
-If No, go to End.
+  - If No, go to End.
 
-Play Game
+#### Play Game
 
 Set number_to_guess to a random number between 1 and 7.
 
@@ -61,52 +61,53 @@ Initialize previous_guesses as an empty set.
 
 Print welcome message and instructions.
 
-Guess Loop
+#### Guess Loop
 
 While not guessed and attempts < max_attempts:
 
-Prompt: "Type in your number: "
+  - Prompt: "Type in your number: "
 
-Input: guess
+  - Input: guess
 
-Increment attempts by 1.
+  - Increment attempts by 1.
 
-Decision: guess is a valid integer?
+  - Decision: guess is a valid integer?
 
-If No, print "Please enter a valid integer." and continue.
+    - If No, print "Please enter a valid integer." and continue.
 
-If Yes:
+    - If Yes:
 
-Decision: guess < 1 or guess > 7?
+      - Decision: guess < 1 or guess > 7?
 
-If Yes, print "Invalid, please enter a valid number" and continue.
+        - If Yes, print "Invalid, please enter a valid number" and continue.
 
-If No:
+        - If No:
 
-Decision: guess in previous_guesses?
-If Yes, print "Invalid, please enter a different number" and continue.
+          - Decision: guess in previous_guesses?
 
-If No:
+            - If Yes, print "Invalid, please enter a different number" and continue.
 
-Add guess to previous_guesses.
+            - If No:
 
-Decision: guess < number_to_guess?
+              - Add guess to previous_guesses.
 
-If Yes, print "Too low!" and continue.
+              - Decision: guess < number_to_guess?
 
-If No:
+                - If Yes, print "Too low!" and continue.
 
-Decision: guess > number_to_guess?
+                - If No:
 
-If Yes, print "Too high!" and continue.
+                  - Decision: guess > number_to_guess?
 
-If No:
+                    - If Yes, print "Too high!" and continue.
 
-Set guessed to True.
+                    - If No:
 
-Print "Well done! You guessed the correct number in {attempts} attempts."
+                      - Set guessed to True.
 
-Max Attempts Reached
+                      - Print "Well done! You guessed the correct number in {attempts} attempts."
+
+#### Max Attempts Reached
 
 Decision: guessed == False?
 
@@ -114,7 +115,7 @@ If Yes, print "Sorry, you have used all {max_attempts} attempts. The correct num
 
 If No, proceed to Main Loop.
 
-End
+#### End
 
 Print "Thanks for playing the Guess the Number Game!"
 
@@ -146,15 +147,14 @@ Python 3.x
 
 Heroku
 
-![heroku](https://github.com/user-attachments/assets/ab6b1a32-da5a-4877-8e30-f26a02f92496)
-
 Github
 
-Gitpod:
-
-![gitpod](https://github.com/user-attachments/assets/7804e5d7-86f8-4285-a3b4-a4054711bbe9)
+Gitpod
 
 CI Python Linter
+
+![heroku](https://github.com/user-attachments/assets/ab6b1a32-da5a-4877-8e30-f26a02f92496)
+![gitpod](https://github.com/user-attachments/assets/7804e5d7-86f8-4285-a3b4-a4054711bbe9)
 
 ### 6. Testing
 
@@ -240,7 +240,7 @@ Deploy the code to Heroku.
 
 Set up a web dyno to run the main.py file.
 
-### 9. Credits
+### 8. Credits
 
 Developed by [Michael Agesse].
 
