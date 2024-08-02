@@ -252,5 +252,7 @@ Inspired by classic number guessing games.
 
 Random number generation powered by Python's random module.
 
+https://www.w3schools.com
+
 This README.md provides detailed information about the "Guess the Number" game, including purpose, user stories, features, future 
 enhancements, technologies used, testing methods, deployment instructions, and credits.
