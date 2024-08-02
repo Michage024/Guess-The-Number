@@ -1,17 +1,17 @@
 # Guess the Number Game
 
 
-## 1. Purpose of the Project
+### 1. Purpose of the Project
 
 The "Guess the Number" game is a simple console-based game where players have to guess a randomly selected number between 1 and 7. The game is designed to provide an engaging and challenging experience by limiting the number of attempts and providing feedback on whether the guess is too high, too low, or correct.
 
-## 2. User Stories
+### 2. User Stories
 
 As a visitor, I would like to play the game of number guessing.
 
 As a game player, I would like to know whether the guess is correct or not.
 
-## 3. Features
+### 3. Features
 
 Randomly selects a number between 1 and 7.
 
@@ -27,7 +27,7 @@ Prevents the player from guessing the same number more than once.
 
 Offers the player the option to play again after each game.
 
-### Flow Chart
+##### Flow Chart
 
 ![Guess the game flow chart](https://github.com/user-attachments/assets/074f261d-c838-4089-a6f1-d4f13cd573ba)
 
@@ -128,7 +128,7 @@ End the program.
 ![Outside of range of numbers from 1 to 7](https://github.com/user-attachments/assets/cc19916f-def2-44dd-82c8-972f2ea81438)
 ![Attempts exhausted](https://github.com/user-attachments/assets/6b9dd258-0782-4b18-acb7-3c48cef72aa7)
 
-## 4. Future Features
+### 4. Future Features
 
 Implement difficulty levels with different ranges of numbers.
 
@@ -140,7 +140,7 @@ Create a graphical user interface (GUI) for the game.
 
 Allow multiplayer mode where players take turns guessing.
 
-## 5. Technology
+### 5. Technology
 
 Python 3.x
 
@@ -156,9 +156,9 @@ Gitpod:
 
 CI Python Linter
 
-## 6. Testing
+### 6. Testing
 
-### 6.1 Code Validation
+#### 6.1 Code Validation
 
 Code runs without errors using Python 3.x.
 
@@ -172,7 +172,7 @@ Ligthouse
 
 ![light house](https://github.com/user-attachments/assets/d5ec2ecd-be38-49ac-9430-52c77c40496a)
 
-### 6.2 Test Cases (User Story Based with Screenshots)
+#### 6.2 Test Cases (User Story Based with Screenshots)
 
 Test Case 1: Valid Guess
 
@@ -206,15 +206,15 @@ Expected Outcome: The game prompts "Please enter a valid integer".
 
 Screenshot: (Provide a screenshot of the console output showing this behavior)
 
-### 6.3 Fixed Bugs
+#### 6.3 Fixed Bugs
 
 Fixed a bug where the game did not count invalid inputs as attempts.
 
 Fixed a bug where repeated guesses were not properly handled.
 
-7. Deployment
+### 7. Deployment
 
-7.1 Via Gitpod
+#### 7.1 Via Gitpod
 
 Open Gitpod and clone the repository.
 
@@ -230,7 +230,7 @@ Copy code
 
 python main.py
 
-7.2 Via Heroku
+#### 7.2 Via Heroku
 
 Create a new Heroku application.
 
@@ -240,7 +240,7 @@ Deploy the code to Heroku.
 
 Set up a web dyno to run the main.py file.
 
-9. Credits
+### 9. Credits
 
 Developed by [Michael Agesse].
 
