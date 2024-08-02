@@ -1,91 +1,146 @@
-# Guess The Number Game
+# Guess the Number Game
 
-### User Experience
-"Guess The Number Game" is a simple text-based game where the player has to guess a randomly generated number between 1 and 7. The game provides feedback whether the guess is too high, too low, invalid due to an out of range number entered, invalid due to a repeated wrong number entered or correct. The player has a maximum of 5 attempts to guess the number correctly. After the game ends, the player is given the option to play again.
 
-### How to Run
+## 1. Purpose of the Project
 
-User needs to ensure that they have Python 3.x installed on their device.
+The "Guess the Number" game is a simple console-based game where players have to guess a randomly selected number between 1 and 7. The game is designed to provide an engaging and challenging experience by limiting the number of attempts and providing feedback on whether the guess is too high, too low, or correct.
 
-Save the provided code in a file named run.py.
+## 2. User Stories
 
-Open a terminal or command prompt.
+As a visitor, I would like to play the game of number guessing.
 
-Navigate to the directory where run.py is located.
+As a game player, I would like to know whether the guess is correct or not.
 
-Run the game using the following command:
-
-python run.py
-
-### User Functions Steps:
-
-If User enters a number that is below the correct 'number_to_guess', it prints 'Too low!' and prompts User to enter a different number.
-
-The image below shows an example:
-
-![welcome](https://github.com/user-attachments/assets/f0003940-09ca-4a14-b20a-b444444fd821)
-
-If User enters a number that is higher than the correct 'number_to_guess', it prints 'Too high!' and prompts User to enter a different number.
-
-The image below shows an example:
-
-![too high](https://github.com/user-attachments/assets/2357c186-bc1a-48e8-a6b7-69b7b1706257)
-
-If User is enters the correct number, 'Well done! You guessed the correct number in (the amount of attempts) attempts' and prompts User to enter either yes or no to indicate if they will like to play again.
-
-The image below shows an example:
-
-![correct](https://github.com/user-attachments/assets/ee4124f1-eb0f-4651-a77d-1923a4e51358)
-
-If User is unsuccessful after 5 attempts, it prints 'Sorry, you have used all 5 attempts!', then states the correct number and prompts User to enter either yes or no to indicate if they will like to play again.
-
-The image below shows an example:
-
-![Attempts exhausted](https://github.com/user-attachments/assets/18ff8063-cdd6-47f1-ade5-05974cbed1af)
-
-If User enters a wrong number more than once consecutively, it prints 'Sorry, you have used all 5 attempts!' and prompts User to enter a different number.
-
-The image below shows an example:
-
-![wrong number more than once](https://github.com/user-attachments/assets/178d6b66-0baf-4b2f-9b63-284361394f93)
-
-If User enters a number outside of range of numbers from 1 to 7, it prints 'Invalid, please enter a number between 1 and 7!' and prompts User to enter a different number.
-
-The image below shows an example:
-
-![Outside of range of numbers from 1 to 7](https://github.com/user-attachments/assets/cc19916f-def2-44dd-82c8-972f2ea81438)
-
-If User enters any other key or symbol, it prints 'Invalid, please enter a number between 1 and 7!', and prompts User to enter a different number. It also lets them know that they have exhausted all attempts for that session after 5 tries.
-
-![Attempts exhausted](https://github.com/user-attachments/assets/6b9dd258-0782-4b18-acb7-3c48cef72aa7)
-
-## Features
+## 3. Features
 
 Randomly selects a number between 1 and 7.
 
 Prompts the player to guess the number.
 
-Informs the player if their guess is too high, too low, or correct.
-
-Keeps track of the number of attempts.
+Provides feedback if the guess is too high, too low, or correct.
 
 Limits the player to 5 attempts.
 
-Counts invalid entries (numbers outside the range) as attempts.
+Invalid entries (numbers outside the range) do not count as part of the 5 attempts.
 
 Prevents the player from guessing the same number more than once.
 
 Offers the player the option to play again after each game.
 
-## Technology
+Flow Chart
 
-### Requirements
+![Guess the game flow chart](https://github.com/user-attachments/assets/074f261d-c838-4089-a6f1-d4f13cd573ba)
 
-Github
+Start
 
-Gitpod:
+Begin the program.
 
-![gitpod](https://github.com/user-attachments/assets/7804e5d7-86f8-4285-a3b4-a4054711bbe9)
+Main Loop
+
+Prompt: "Would you like to play again? (yes/no): "
+
+Input: play_again
+
+Decision: play_again == 'yes'?
+
+If Yes, proceed to Play Game.
+
+If No, go to End.
+
+Play Game
+
+Set number_to_guess to a random number between 1 and 7.
+
+Initialize attempts to 0.
+
+Initialize max_attempts to 5.
+
+Set guessed to False.
+
+Initialize previous_guesses as an empty set.
+
+Print welcome message and instructions.
+
+Guess Loop
+
+While not guessed and attempts < max_attempts:
+
+Prompt: "Type in your number: "
+
+Input: guess
+
+Increment attempts by 1.
+
+Decision: guess is a valid integer?
+
+If No, print "Please enter a valid integer." and continue.
+
+If Yes:
+
+Decision: guess < 1 or guess > 7?
+
+If Yes, print "Invalid, please enter a valid number" and continue.
+
+If No:
+
+Decision: guess in previous_guesses?
+If Yes, print "Invalid, please enter a different number" and continue.
+
+If No:
+
+Add guess to previous_guesses.
+
+Decision: guess < number_to_guess?
+
+If Yes, print "Too low!" and continue.
+
+If No:
+
+Decision: guess > number_to_guess?
+
+If Yes, print "Too high!" and continue.
+
+If No:
+
+Set guessed to True.
+
+Print "Well done! You guessed the correct number in {attempts} attempts."
+
+Max Attempts Reached
+
+Decision: guessed == False?
+
+If Yes, print "Sorry, you have used all {max_attempts} attempts. The correct number is {number_to_guess}."
+
+If No, proceed to Main Loop.
+
+End
+
+Print "Thanks for playing the Guess the Number Game!"
+
+End the program.
+
+![welcome](https://github.com/user-attachments/assets/f0003940-09ca-4a14-b20a-b444444fd821)
+![too high](https://github.com/user-attachments/assets/2357c186-bc1a-48e8-a6b7-69b7b1706257)
+![correct](https://github.com/user-attachments/assets/ee4124f1-eb0f-4651-a77d-1923a4e51358)
+![Attempts exhausted](https://github.com/user-attachments/assets/18ff8063-cdd6-47f1-ade5-05974cbed1af)
+![wrong number more than once](https://github.com/user-attachments/assets/178d6b66-0baf-4b2f-9b63-284361394f93)
+![Outside of range of numbers from 1 to 7](https://github.com/user-attachments/assets/cc19916f-def2-44dd-82c8-972f2ea81438)
+![Attempts exhausted](https://github.com/user-attachments/assets/6b9dd258-0782-4b18-acb7-3c48cef72aa7)
+
+## 4. Future Features
+
+Implement difficulty levels with different ranges of numbers.
+
+Add a scoring system based on the number of attempts.
+
+Provide hints to the player if they are close to the correct number.
+
+Create a graphical user interface (GUI) for the game.
+
+Allow multiplayer mode where players take turns guessing.
+
+## 5. Technology
 
 Python 3.x
 
@@ -93,18 +148,19 @@ Heroku
 
 ![heroku](https://github.com/user-attachments/assets/ab6b1a32-da5a-4877-8e30-f26a02f92496)
 
+Github
+
+Gitpod:
+
+![gitpod](https://github.com/user-attachments/assets/7804e5d7-86f8-4285-a3b4-a4054711bbe9)
+
 CI Python Linter
 
-### Flow Chart
+## 6. Testing
 
-![Guess the game flow chart](https://github.com/user-attachments/assets/074f261d-c838-4089-a6f1-d4f13cd573ba)
+### 6.1 Code Validation
 
-
-### Verification
-
-Ligthouse
-
-![light house](https://github.com/user-attachments/assets/d5ec2ecd-be38-49ac-9430-52c77c40496a)
+Code runs without errors using Python 3.x.
 
 Code verified with CI Python Linter
 
@@ -112,24 +168,85 @@ Verificator link: https://pep8ci.herokuapp.com/#
 
 ![VALIDATION](https://github.com/user-attachments/assets/3bd9f09a-2aff-493e-ac06-4a6b912edf56)
 
-### Code Explanation
+Ligthouse
 
-play_game Function: Contains the main logic of the game.
+![light house](https://github.com/user-attachments/assets/d5ec2ecd-be38-49ac-9430-52c77c40496a)
 
-Generates a random number between 1 and 7.
+### 6.2 Test Cases (User Story Based with Screenshots)
 
-Prompts the player to enter their guess.
+Test Case 1: Valid Guess
 
-Checks if the guess is within the valid range and if it has been guessed before.
+Description: Player enters a valid guess within the range.
 
-Provides feedback on whether the guess is too high, too low, or correct.
+Expected Outcome: The game informs the player if the guess is too high, too low, or correct.
 
-Keeps track of the number of attempts.
+Screenshot: (Provide a screenshot of the console output showing this behavior)
 
-Ends the game if the player uses all attempts or guesses the correct number.
+Test Case 2: Invalid Guess
 
-main Function: Controls the game loop.
+Description: Player enters a guess outside the range.
 
-Continuously runs the game until the player decides to stop.
+Expected Outcome: The game prompts "Invalid, please enter a valid number between 1 and 7".
 
-Asks the player if they want to play again after each game.
+Screenshot: (Provide a screenshot of the console output showing this behavior)
+
+Test Case 3: Repeated Guess
+
+Description: Player enters a guess they have already entered.
+
+Expected Outcome: The game prompts "Invalid, please enter a different number".
+
+Screenshot: (Provide a screenshot of the console output showing this behavior)
+
+Test Case 4: Non-integer Input
+
+Description: Player enters a non-integer input.
+
+Expected Outcome: The game prompts "Please enter a valid integer".
+
+Screenshot: (Provide a screenshot of the console output showing this behavior)
+
+### 6.3 Fixed Bugs
+
+Fixed a bug where the game did not count invalid inputs as attempts.
+
+Fixed a bug where repeated guesses were not properly handled.
+
+7. Deployment
+
+7.1 Via Gitpod
+
+Open Gitpod and clone the repository.
+
+Ensure Python 3.x is installed in the Gitpod environment.
+
+Navigate to the directory containing main.py.
+
+Run the game using the command:
+
+bash
+
+Copy code
+
+python main.py
+
+7.2 Via Heroku
+
+Create a new Heroku application.
+
+Add the necessary buildpacks for Python.
+
+Deploy the code to Heroku.
+
+Set up a web dyno to run the main.py file.
+
+9. Credits
+
+Developed by [Michael Agesse].
+
+Inspired by classic number guessing games.
+
+Random number generation powered by Python's random module.
+
+This README.md provides detailed information about the "Guess the Number" game, including purpose, user stories, features, future 
+enhancements, technologies used, testing methods, deployment instructions, and credits.
