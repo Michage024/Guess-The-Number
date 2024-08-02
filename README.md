@@ -122,11 +122,17 @@ Print "Thanks for playing the Guess the Number Game!"
 End the program.
 
 ![welcome](https://github.com/user-attachments/assets/f0003940-09ca-4a14-b20a-b444444fd821)
+
 ![too high](https://github.com/user-attachments/assets/2357c186-bc1a-48e8-a6b7-69b7b1706257)
+
 ![correct](https://github.com/user-attachments/assets/ee4124f1-eb0f-4651-a77d-1923a4e51358)
+
 ![Attempts exhausted](https://github.com/user-attachments/assets/18ff8063-cdd6-47f1-ade5-05974cbed1af)
+
 ![wrong number more than once](https://github.com/user-attachments/assets/178d6b66-0baf-4b2f-9b63-284361394f93)
+
 ![Outside of range of numbers from 1 to 7](https://github.com/user-attachments/assets/cc19916f-def2-44dd-82c8-972f2ea81438)
+
 ![Attempts exhausted](https://github.com/user-attachments/assets/6b9dd258-0782-4b18-acb7-3c48cef72aa7)
 
 ### 4. Future Features
