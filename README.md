@@ -121,20 +121,6 @@ Print "Thanks for playing the Guess the Number Game!"
 
 End the program.
 
-![welcome](https://github.com/user-attachments/assets/f0003940-09ca-4a14-b20a-b444444fd821)
-
-![too high](https://github.com/user-attachments/assets/2357c186-bc1a-48e8-a6b7-69b7b1706257)
-
-![correct](https://github.com/user-attachments/assets/ee4124f1-eb0f-4651-a77d-1923a4e51358)
-
-![Attempts exhausted](https://github.com/user-attachments/assets/18ff8063-cdd6-47f1-ade5-05974cbed1af)
-
-![wrong number more than once](https://github.com/user-attachments/assets/178d6b66-0baf-4b2f-9b63-284361394f93)
-
-![Outside of range of numbers from 1 to 7](https://github.com/user-attachments/assets/cc19916f-def2-44dd-82c8-972f2ea81438)
-
-![Attempts exhausted](https://github.com/user-attachments/assets/6b9dd258-0782-4b18-acb7-3c48cef72aa7)
-
 ### 4. Future Features
 
 Implement difficulty levels with different ranges of numbers.
@@ -180,37 +166,49 @@ Ligthouse
 
 #### 6.2 Test Cases (User Story Based with Screenshots)
 
-Test Case 1: Valid Guess
+#### Test Case 1: Valid Guess
 
-Description: Player enters a valid guess within the range.
+Opening message:
 
-Expected Outcome: The game informs the player if the guess is too high, too low, or correct.
+![welcome](https://github.com/user-attachments/assets/f0003940-09ca-4a14-b20a-b444444fd821)
 
-Screenshot: (Provide a screenshot of the console output showing this behavior)
+If User enters a number that is below the correct 'number_to_guess', it prints 'Too low!' and prompts User to enter a different number.
 
-Test Case 2: Invalid Guess
+The image below shows an example:
 
-Description: Player enters a guess outside the range.
+![1](https://github.com/user-attachments/assets/c55d21ce-3987-474d-90f6-66b5285e77a3)
 
-Expected Outcome: The game prompts "Invalid, please enter a valid number between 1 and 7".
+If User enters a number that is higher than the correct 'number_to_guess', it prints 'Too high!' and prompts User to enter a different number.
 
-Screenshot: (Provide a screenshot of the console output showing this behavior)
+The image below shows an example:
 
-Test Case 3: Repeated Guess
+![too high](https://github.com/user-attachments/assets/2357c186-bc1a-48e8-a6b7-69b7b1706257)
 
-Description: Player enters a guess they have already entered.
+If User enters the correct number, it prints 'Well done! You guessed the correct number in (the amount of attempts) attempts' and prompts User to enter either yes or no to indicate if they will like to play again.
 
-Expected Outcome: The game prompts "Invalid, please enter a different number".
+The image below shows an example:
 
-Screenshot: (Provide a screenshot of the console output showing this behavior)
+![correct](https://github.com/user-attachments/assets/ee4124f1-eb0f-4651-a77d-1923a4e51358)
 
-Test Case 4: Non-integer Input
+#### Test Case 2: Invalid Guess
 
-Description: Player enters a non-integer input.
+If User enters a number outside the range of numbers from 1 to 7, it prints 'Invalid, please enter a number between 1 and 7!' and prompts User to enter a different number.
 
-Expected Outcome: The game prompts "Please enter a valid integer".
+The image below shows an example:
 
-Screenshot: (Provide a screenshot of the console output showing this behavior)
+![Outside of range of numbers from 1 to 7](https://github.com/user-attachments/assets/cc19916f-def2-44dd-82c8-972f2ea81438)
+
+If User enters any letter or symbol, it prints 'Invalid, please enter a valid integer', and prompts User to enter a different number. These attempts do not affect the 5 limited attempts and can be entered as much as possible.
+
+![symbols](https://github.com/user-attachments/assets/bef61b7e-4233-4f0f-9d2b-5a00fe87116d)
+
+#### Test Case 3: Repeated Guess
+
+If User enters a wrong number more than once consecutively, it prints 'Invalid, please enter a different number between 1 and 7' and prompts User to enter a different number.
+
+The image below shows an example:
+
+![wrong number more than once](https://github.com/user-attachments/assets/178d6b66-0baf-4b2f-9b63-284361394f93)
 
 #### 6.3 Fixed Bugs
 
