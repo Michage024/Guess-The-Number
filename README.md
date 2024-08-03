@@ -170,7 +170,7 @@ https://ui.dev/amiresponsive
 
 ![am i responsive](https://github.com/user-attachments/assets/d57fdec9-eb30-408d-a21e-110c3841e0c2)
 
-#### 6.2 Test Cases (User Story Based with Screenshots)
+#### 6.2 Test Cases
 
 #### Test Case 1: Valid Guess
 
